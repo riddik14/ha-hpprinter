@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up HP Printer",
+        "data": {
+          "host": "Host ip o Nome DNS",
+          "name": "Nome"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "L'integrazione HP Printer  ({name}) è gia configurata"
+    },
+    "error": {
+      "error_400": "impostazioni non valide controlla se accedi a `http://{IP}//DevMgmt/ProductStatusDyn.xml`",
+      "error_404": "API non supportata"
+    }
+  },
+  "options": {
+    "step": {
+      "hp_printer_additional_settings": {
+        "title": "Opzioni HP Printer.",
+        "description": "Definisci le impostazioni avanzate HP Printer integration",
+        "data": {
+          "host": "Host ip o Nome DNS",
+          "name": "Nome",
+          "update_interval": "Intervallo aggiornamento (Secondi)",
+          "log_level": "Log livello",
+          "store_data": "Nessuna risposta?"
+        }
+      }
+    },
+    "error": {
+      "error_400": "impostazioni non valide controlla se accedi a `http://{IP}//DevMgmt/ProductStatusDyn.xml`",
+      "error_404": "API non supportata"
+      "already_configured": "HP Printer integration ({name}) gia configurata"
+    }
+  }
+}
